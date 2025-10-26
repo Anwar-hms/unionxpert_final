@@ -534,55 +534,161 @@
         </div>
       </section>
 
-      <!-- Contact -->
-      <section id="contact" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 mb-16 bg-slate-50 dark:bg-slate-900/10 rounded-2xl">
-        <div class="grid lg:grid-cols-2 gap-8">
-          <div class="p-6 bg-white/80 dark:bg-slate-800/60 rounded-2xl shadow">
-            <h3 class="text-2xl font-bold">যোগাযোগ করুন</h3>
-            <p class="text-slate-600 dark:text-slate-300 mt-2">আপনার প্রয়োজন জানান — আমরা UnionXpert টিম আপনার পাশে আছি।</p>
+     <!-- Contact Section -->
+<section id="contact" class="w-full max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8 py-12 mb-16 bg-slate-50 dark:bg-slate-900/10 rounded-2xl">
+    <div class="text-center mb-12">
+        <h2 class="text-4xl font-bold text-gray-800 dark:text-white mb-4">যোগাযোগ করুন</h2>
+        <p class="text-lg text-gray-600 dark:text-gray-300">আপনার প্রয়োজন জানান — আমরা UnionXpert টিম আপনার পাশে আছি।</p>
+    </div>
 
-            <form id="contactForm" class="mt-6 space-y-4">
-              <div>
-                <label class="block text-sm">পুরো নাম</label>
-                <input id="name" required class="mt-1 w-full rounded-md p-3 ring-1 ring-slate-200 dark:ring-0 bg-transparent" placeholder="আপনার নাম" />
-              </div>
-              <div>
-                <label class="block text-sm">মোবাইল নাম্বার</label>
-                <input id="name" required class="mt-1 w-full rounded-md p-3 ring-1 ring-slate-200 dark:ring-0 bg-transparent" placeholder="আপনার নাম্বার দিন" />
-              </div>
-              <div>
-                <label class="block text-sm">ইমেইল</label>
-                <input id="email" type="email" required class="mt-1 w-full rounded-md p-3 ring-1 ring-slate-200 dark:ring-0 bg-transparent" placeholder="example@mail.com" />
-              </div>
-              <div>
-                <label class="block text-sm">বার্তা</label>
-                <textarea id="message" rows="5" required class="mt-1 w-full rounded-md p-3 ring-1 ring-slate-200 dark:ring-0 bg-transparent" placeholder="আপনার প্রশ্ন বা দরকার লিখুন"></textarea>
-              </div>
-              <div>
-                <button type="submit" class="px-6 py-3 bg-indigo-600 text-white font-bold rounded-lg">পাঠিয়ে দিন</button>
-              </div>
-            </form>
-          </div>
-
-          <div class="p-6">
-            <div class="bg-white/80 dark:bg-slate-800/60 p-6 rounded-2xl shadow">
-              <h4 class="font-semibold">ডিরেক্ট যোগাযোগ</h4>
-              <p class="text-sm text-slate-600 dark:text-slate-300 mt-2">ফোন: +8801716-418362 (Sikder Sahabuddin Shihab)<br>ইমেইল: info@unionxpert.com<br/>অফিস: মেরুল বাড্ডা, ঢাকা</p>
-
-              <div class="mt-6">
-                <h5 class="font-semibold">সামাজিক মাধ্যম</h5>
-                <div class="flex gap-3 mt-3">
-                  <a class="px-3 py-2 rounded-lg ring-1 ring-slate-200 dark:ring-0">Facebook</a>
-                  <a class="px-3 py-2 rounded-lg ring-1 ring-slate-200 dark:ring-0">YouTube</a>
-                  <a class="px-3 py-2 rounded-lg ring-1 ring-slate-200 dark:ring-0">TikTok</a>
+    <div class="grid lg:grid-cols-2 gap-8 max-w-[1100px] mx-auto">
+        
+        <!-- Contact Form -->
+        <div class="bg-white/80 dark:bg-slate-800/60 rounded-2xl shadow-lg p-6">
+            <h3 class="text-2xl font-bold text-gray-800 dark:text-white mb-6">মেসেজ পাঠান</h3>
+            
+            <form id="contactForm" class="space-y-4">
+                <div>
+                    <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">পুরো নাম</label>
+                    <input id="name" required class="w-full rounded-lg border border-gray-300 dark:border-gray-600 px-4 py-3 bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:ring-2 focus:ring-indigo-500 focus:border-transparent" placeholder="আপনার পুরো নাম লিখুন" />
                 </div>
-              </div>
+                
+                <div>
+                    <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">মোবাইল নাম্বার</label>
+                    <input id="phone" type="tel" required class="w-full rounded-lg border border-gray-300 dark:border-gray-600 px-4 py-3 bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:ring-2 focus:ring-indigo-500 focus:border-transparent" placeholder="০১৭XXXXXXXX" />
+                </div>
+                
+                <div>
+                    <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">ইমেইল</label>
+                    <input id="email" type="email" required class="w-full rounded-lg border border-gray-300 dark:border-gray-600 px-4 py-3 bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:ring-2 focus:ring-indigo-500 focus:border-transparent" placeholder="example@mail.com" />
+                </div>
+                
+                <div>
+                    <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">বার্তা</label>
+                    <textarea id="message" rows="4" required class="w-full rounded-lg border border-gray-300 dark:border-gray-600 px-4 py-3 bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:ring-2 focus:ring-indigo-500 focus:border-transparent" placeholder="আপনার প্রশ্ন বা প্রয়োজনীয় বিষয় লিখুন..."></textarea>
+                </div>
+
+                <button type="submit" class="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-6 rounded-lg transition duration-200 flex items-center justify-center">
+                    <i class="fas fa-paper-plane mr-2"></i>
+                    মেসেজ পাঠিয়ে দিন
+                </button>
+            </form>
+        </div>
+
+        <!-- Contact Information & Direct Call -->
+        <div class="space-y-6">
+            <!-- Direct Call Options -->
+            <div class="bg-white/80 dark:bg-slate-800/60 p-6 rounded-2xl shadow-lg">
+                <h4 class="font-semibold text-xl text-gray-800 dark:text-white mb-4">সরাসরি কল করুন</h4>
+                
+                <!-- Primary Call Button -->
+                <div class="mb-4 p-4 bg-green-50 dark:bg-green-900/20 rounded-lg border border-green-200 dark:border-green-800">
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <p class="font-semibold text-green-800 dark:text-green-300">সিকদার সাহাবুদ্দিন শিহাব</p>
+                            <p class="text-sm text-green-600 dark:text-green-400 mt-1">প্রধান কো-অর্ডিনেটর</p>
+                        </div>
+                        <a href="tel:+8801716418362" class="bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-lg font-bold transition duration-200 flex items-center">
+                            <i class="fas fa-phone mr-2"></i>কল করুন 
+                        </a>
+                    </div>
+                    <p class="text-lg font-mono text-green-700 dark:text-green-300 mt-2 text-center">+8801716-418362</p>
+                </div>
+                
+                <!-- Secondary Numbers -->
+                <div class="space-y-3">
+                    <div class="flex items-center justify-between p-3 bg-blue-50 dark:bg-blue-900/20 rounded-lg">
+                        <div>
+                            <p class="font-medium text-blue-800 dark:text-blue-300">সাপোর্ট টিম</p>
+                            <p class="text-sm text-blue-600 dark:text-blue-400">সাধারণ ইনকোয়ারি</p>
+                        </div>
+                        <a href="tel:+8801716418362" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition duration-200">
+                            কল করুন
+                        </a>
+                    </div>
+
+                    <div class="flex items-center justify-between p-3 bg-purple-50 dark:bg-purple-900/20 rounded-lg">
+                        <div>
+                            <p class="font-medium text-purple-800 dark:text-purple-300">টেকনিক্যাল সাপোর্ট</p>
+                            <p class="text-sm text-purple-600 dark:text-purple-400">ওয়েবসাইট সম্পর্কিত</p>
+                        </div>
+                        <a href="tel:+8801613966482" class="bg-purple-600 hover:bg-purple-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition duration-200">
+                            কল করুন
+                        </a>
+                    </div>
+                </div>
             </div>
 
-            <div class="mt-6 text-sm text-slate-500 dark:text-slate-300">UnionXpert — মাঠ থেকে পরিকল্পনা, ডিজিটাল থেকে এক্সিকিউশন।</div>
-          </div>
+            <!-- Contact Information -->
+            <div class="bg-white/80 dark:bg-slate-800/60 p-6 rounded-2xl shadow-lg">
+                <h4 class="font-semibold text-xl text-gray-800 dark:text-white mb-4">অন্যান্য যোগাযোগ</h4>
+                <div class="space-y-4">
+                    <div class="flex items-center">
+                        <i class="fas fa-envelope text-indigo-600 mr-3"></i>
+                        <div>
+                            <p class="font-medium">ইমেইল</p>
+                            <p class="text-gray-600 dark:text-gray-300">info@unionxpert.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-center">
+                        <i class="fas fa-map-marker-alt text-indigo-600 mr-3"></i>
+                        <div>
+                            <p class="font-medium">অফিস ঠিকানা</p>
+                            <p class="text-gray-600 dark:text-gray-300">মেরুল বাড্ডা, ঢাকা, বাংলাদেশ</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-center">
+                        <i class="fas fa-clock text-indigo-600 mr-3"></i>
+                        <div>
+                            <p class="font-medium">কাজের সময়</p>
+                            <p class="text-gray-600 dark:text-gray-300">শনি - বৃহস্পতি: সকাল ৯টা - রাত ১০টা</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Social Media -->
+            <div class="bg-white/80 dark:bg-slate-800/60 p-6 rounded-2xl shadow-lg">
+                <h5 class="font-semibold text-lg text-gray-800 dark:text-white mb-4">সামাজিক মাধ্যম</h5>
+                <div class="grid grid-cols-3 gap-3">
+                    <a href="https://www.facebook.com/UnionXpert" class="bg-blue-600 hover:bg-blue-700 text-white py-3 px-4 rounded-lg text-center transition duration-200 flex items-center justify-center">
+                        <i class="fab fa-facebook-f mr-2"></i>
+                        Facebook
+                    </a>
+                    <a href="#" class="bg-red-600 hover:bg-red-700 text-white py-3 px-4 rounded-lg text-center transition duration-200 flex items-center justify-center">
+                        <i class="fab fa-youtube mr-2"></i>
+                        YouTube
+                    </a>
+                    <a href="#" class="bg-black hover:bg-gray-800 text-white py-3 px-4 rounded-lg text-center transition duration-200 flex items-center justify-center">
+                        <i class="fab fa-tiktok mr-2"></i>
+                        TikTok
+                    </a>
+                </div>
+            </div>
+
+            <!-- Emergency Support -->
+            <div class="bg-gradient-to-r from-orange-500 to-red-600 p-6 rounded-2xl text-white">
+                <div class="flex items-center mb-2">
+                    <i class="fas fa-exclamation-triangle text-xl mr-3"></i>
+                    <h5 class="font-bold text-lg">জরুরি সাপোর্ট</h5>
+                </div>
+                <p class="text-sm opacity-90 mb-3">যেকোনো জরুরি সমস্যার জন্য ২৪/৭ সাপোর্ট available</p>
+                <a href="tel:+8801613966482" class="bg-white text-red-600 hover:bg-gray-100 font-bold py-2 px-4 rounded-lg text-center block transition duration-200">
+                    <i class="fas fa-phone-alt mr-2"></i>
+                    এখনই কল করুন
+                </a>
+            </div>
         </div>
-      </section>
+    </div>
+
+    <div class="text-center mt-8">
+        <p class="text-sm text-slate-500 dark:text-slate-300">
+            UnionXpert — মাঠ থেকে পরিকল্পনা, ডিজিটাল থেকে এক্সিকিউশন।
+        </p>
+    </div>
+</section>
 
     </main>
 
@@ -672,6 +778,15 @@
   </div>
 
   <script>
+    // Call button animation
+    document.querySelectorAll('a[href^="tel:"]').forEach(link => {
+        link.addEventListener('click', function() {
+            this.style.transform = 'scale(0.95)';
+            setTimeout(() => {
+                this.style.transform = 'scale(1)';
+            }, 150);
+        });
+    });
     // year
     document.getElementById('year').textContent = new Date().getFullYear();
 
